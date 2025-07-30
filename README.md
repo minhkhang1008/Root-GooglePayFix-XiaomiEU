@@ -11,6 +11,8 @@ A comprehensive guide to rooting Xiaomi.eu HyperOS and fixing Play Integrity to 
 > **DO THIS AT YOUR OWN RISK\!**
 >
 > Flashing custom files to your device can potentially lead to data loss or "bricking" your phone. The author of this guide and its contributors are not responsible for any damage that may occur. **Always back up your important data before proceeding.**
+> 
+> I am **not** the owner of Xiaomi.eu nor any modules and apps, I do not come up with these tutorial myself but gather information from many places and test them out!
 
 -----
 
@@ -27,12 +29,12 @@ A comprehensive guide to rooting Xiaomi.eu HyperOS and fixing Play Integrity to 
 
 ### Instructions
 
-1.  **Extract `boot.img`**: Unzip your Xiaomi.eu ROM file (e.g., `xiaomi.eu_MULTI_XXX_OS1.X.X.X_XX.zip`). Navigate to the `images` folder and copy the `boot.img` file to your phone's internal storage.
+1.  **Extract `boot.img`**: Unzip your Xiaomi.eu ROM file (e.g., `xiaomi.eu_DEVICECODE_OSX.X.X.X.XXXXXXX_XX.zip`). Navigate to the `images` folder and copy the `boot.img` file to your phone's internal storage.
 
 2.  **Patch the Boot Image**:
 
       - Open your chosen root management app (Magisk, APatch, etc.).
-      - Select the option to patch a file (e.g., in Magisk, tap `Install` -\> `Select and Patch a File`).
+      - Select the option to patch a file
       - Navigate to and select the raw `boot.img` you transferred in Step 1.
       - The app will begin the patching process.
 
@@ -87,7 +89,7 @@ This section will help you pass Google's Play Integrity checks, allowing you to 
 
 ### Requirements
 
-  - **PlayIntegrityFix-NEXT** (version 1.5 or newer recommended)
+  - **PlayIntegrityFix-NEXT** (version 1.5)
   - **ReZygisk** (Required for APatch users)
   - **TrickyStore**
   - **Tricky Addon**
@@ -119,8 +121,3 @@ This section will help you pass Google's Play Integrity checks, allowing you to 
 5.  **Save and Reboot**: Save your settings in TrickyStore and **reboot your phone** one last time.
 
 After rebooting, you should now pass all three levels of Play Integrity (check with an app like "Play Integrity API Checker") and be able to add your cards to Google Wallet/Pay successfully.
-
------
-
-## Disclaimer?
-I am not the owner of Xiaomi.eu nor any modules and apps, I do not come up with these tutorial myself but gather information from many places and test them out!
