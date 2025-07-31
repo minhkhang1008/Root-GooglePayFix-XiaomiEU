@@ -88,10 +88,10 @@ This section will help you pass Google's Play Integrity checks, allowing you to 
 
 ### Requirements
 
-  - **PlayIntegrityFix-NEXT** (version 1.5)
-  - **ReZygisk** (Required for APatch users)
-  - **TrickyStore**
-  - **Tricky Addon**
+  - [**PlayIntegrityFix-NEXT** (version 1.5)](https://github.com/minhkhang1008/Root-GooglePayFix-XiaomiEU/raw/refs/heads/main/PlayIntegrityFix-NEXT_v1.5.zip)
+  - [**ReZygisk** (Required for APatch users)](https://github.com/minhkhang1008/Root-GooglePayFix-XiaomiEU/raw/refs/heads/main/ReZygisk-v1.0.0-rc.3-release.zip)
+  - [**TrickyStore**](https://github.com/minhkhang1008/Root-GooglePayFix-XiaomiEU/raw/refs/heads/main/Tricky-Store-v1.3.0-180-8acfa57-release.zip)
+  - [**Tricky Addon**](https://github.com/minhkhang1008/Root-GooglePayFix-XiaomiEU/raw/refs/heads/main/TrickyAddonModule-v4.1.zip)
 
 ### Instructions
 
