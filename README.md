@@ -10,7 +10,7 @@ A comprehensive guide to rooting Xiaomi.eu HyperOS and fixing Play Integrity to 
 
 > **DO THIS AT YOUR OWN RISK\!**
 >
-> Flashing custom files to your device can potentially lead to data loss or "bricking" your phone. The author of this guide and its contributors are not responsible for any damage that may occur. **Always back up your important data before proceeding.**
+> Flashing custom files to your device can potentially lead to data loss, "bricking" or causing bootloop on your phone. I am not responsible for any damage that may occur. **Always back up your important data before proceeding.**
 > 
 > I am **not** the owner of Xiaomi.eu nor any modules and apps, I do not come up with these tutorial myself but gather information from many places and test them out!
 
@@ -29,7 +29,7 @@ A comprehensive guide to rooting Xiaomi.eu HyperOS and fixing Play Integrity to 
 
 ### Instructions
 
-1.  **Extract `boot.img`**: Unzip your Xiaomi.eu ROM file (e.g., `xiaomi.eu_DEVICECODE_OSX.X.X.X.XXXXXXX_XX.zip`). Navigate to the `images` folder and copy the `boot.img` file to your phone's internal storage.
+1.  **Extract `boot.img`**: Unzip your Xiaomi.eu ROM file (`xiaomi.eu_DEVICECODE_OSX.X.X.X.XXXXXXX_XX.zip`). Navigate to the `images` folder and copy the `boot.img` file to your phone's internal storage.
 
 2.  **Patch the Boot Image**:
 
@@ -45,7 +45,6 @@ A comprehensive guide to rooting Xiaomi.eu HyperOS and fixing Play Integrity to 
 
 4.  **Enter Fastboot Mode**:
 
-      - Power off your phone completely.
       - Press and hold the **Volume Down + Power** buttons simultaneously.
       - Keep holding the buttons. The phone may take a screenshot first, then the screen will turn off. Continue holding until a screen with the "FASTBOOT" text in orange appears.
 
@@ -104,7 +103,7 @@ This section will help you pass Google's Play Integrity checks, allowing you to 
 
 3.  **Configure PlayIntegrityFix-NEXT**:
 
-      - Open the `PlayIntegrityFix-NEXT` app from your app drawer.
+      - Open `PlayIntegrityFix-NEXT` in your rooting app.
       - Press **"Fetch pif.json"** to download the latest integrity profile.
       - Tap **"Advanced"**.
       - **Turn OFF all toggles EXCEPT for "Use preview fingerprint"**.
@@ -117,7 +116,26 @@ This section will help you pass Google's Play Integrity checks, allowing you to 
       - Tap **"Deselect Unnecessary"**.
       - Tap **"Set Security Patch"**.
       - Tap **"Get Security Patch Date"**.
+      - Click Save
+  
+5. **Clear Google apps data**:
 
-5.  **Save and Reboot**: Save your settings in TrickyStore and **reboot your phone** one last time.
+      - Open Settings (of your phone), navigate to 'Apps'
+      - Clear **all data** (not cache) of these apps: Google Wallet, Google Play Services, Google Play Store and Google Services Framework.
+      - If you cannot found those apps, remember to turn on show all apps
 
-After rebooting, you should now pass all three levels of Play Integrity (check with an app like "Play Integrity API Checker") and be able to add your cards to Google Wallet/Pay successfully.
+6.  **Reboot**: After finishing all the steps, **reboot your phone** one last time.
+
+After rebooting, you should now pass all three levels of Play Integrity (check with an app like "Play Integrity API Checker") and be able to add your cards to Google Wallet/Pay successfully. 
+
+-----
+
+## Part 3: Troubleshooting
+
+If you cannot pass Play Integrity check or still pass but Google Pay still not working, check out these 2 instructions **carefully**: 
+- [From Xiaomi.eu user](https://xiaomi.eu/community/threads/installing-magisk-and-play-integrity-fix.70553/post-748464)
+- [From Reddit user](https://www.reddit.com/r/Magisk/comments/1loaar8/comment/n0m998b/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+  
+If you still can't get Google Pay to work, considering:
+- Switch to [Curve Pay](https://play.google.com/store/apps/details?id=com.imaginecurve.curve.prd&pcampaignid=web_share)
+- Bring your physical card with you
